@@ -1,0 +1,52 @@
+{
+  "name": "front-ac",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "start:prod": "ng serve --configuration=prod",
+    "start:qa": "ng serve --configuration=qa",
+    "start:dev": "ng serve --configuration=dev",
+    "start:fake": "ng serve --configuration=fake",
+    "build": "ng build",
+    "build:prod": "ng build --configuration=prod",
+    "build:qa": "ng build --configuration=qa",
+    "build:dev": "ng build --configuration=dev",
+    "watch": "ng build --watch --configuration development",
+    "test": "jest --coverage"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "17.3.12",
+    "@angular/common": "17.3.12",
+    "@angular/compiler": "17.3.12",
+    "@angular/core": "17.3.12",
+    "@angular/fire": "^17.1.0",
+    "@angular/forms": "17.3.12",
+    "@angular/platform-browser": "17.3.12",
+    "@angular/platform-browser-dynamic": "17.3.12",
+    "@angular/platform-server": "^17.3.0",
+    "@angular/router": "17.3.12",
+    "@angular/ssr": "^17.3.10",
+    "express": "^4.18.2",
+    "firebase": "^11.0.1",
+    "primeflex": "^3.3.1",
+    "primeicons": "^7.0.0",
+    "primeng": "^17.18.11",
+    "rxjs": "~7.8.0",
+    "ts-node": "^10.9.2",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.14.3"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^17.3.10",
+    "@angular/cli": "^17.3.10",
+    "@angular/compiler-cli": "^17.3.0",
+    "@types/express": "^4.17.17",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^18.18.0",
+    "jest": "^29.7.0",
+    "jest-preset-angular": "^14.2.4",
+    "typescript": "~5.4.2"
+  }
+}
