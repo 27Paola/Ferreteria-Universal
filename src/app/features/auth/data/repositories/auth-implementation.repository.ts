@@ -6,7 +6,7 @@ import { ApiService } from "@shared/services/api/api.service";
 import { AuthRepository } from "@auth/core/repositories/auth.repository";
 import { LoginRequestEntity } from "@auth/core/entities/login-information.entity";
 import { LoginResponseEntity } from "@auth/core/entities/login-response.entity";
-import { RequestRegisterEntity } from "@auth/core/entities/register-infortmation.entity";
+import { RegisterRequestEntity } from "@auth/core/entities/register-infortmation.entity";
 import { RegisterResponseEntity } from "@auth/core/entities/register-response.entity";
 
 @Injectable({
@@ -24,7 +24,7 @@ export class AuthImplementationRepository extends AuthRepository {
   public authenticateUser(params: LoginRequestEntity): Observable<LoginResponseEntity> {
     return this.apiService.post(`${this.apiUrl}/authenticate`, params)
   }
-  public registerUser(params: RequestRegisterEntity): Observable<RegisterResponseEntity> {
+  public registerUser(params: RegisterRequestEntity): Observable<RegisterResponseEntity> {
     return this.apiService.post(`${this.apiUrl}/register`, params)
   }
 }
