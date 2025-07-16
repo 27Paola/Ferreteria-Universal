@@ -6,4 +6,4 @@ export interface RegisterInformationEntity {
   phoneNumber: string;
 }
 
-export interface RequestRegisterEntity extends RegisterInformationEntity {}
+export interface RegisterRequestEntity extends RegisterInformationEntity {}
