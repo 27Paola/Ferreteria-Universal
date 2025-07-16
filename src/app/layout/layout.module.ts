@@ -7,7 +7,8 @@ import { HeaderComponent } from '@shared/components/header/header.component';
 import { PageNotFoundComponent } from '@shared/components/page-not-found/page-not-found.component';
 //Import modules
 import { LayoutRoutingModule } from './layout-routing.module';
-import { AuthModule } from '../features/Auth/presentation/auth.module';
+import { AuthModule } from '@auth/presentation/auth.module';
+import { MenuModule } from '@menu/presentation/menu.module';
 
 import { ServiceProviderModule } from '../core/service-providers/service-provider.module';
 import { SessionProviderservice } from '@shared/services/auth/session-provider.service';
@@ -25,6 +26,7 @@ import { provideHttpClient, withFetch } from '@angular/common/http';
     BrowserModule,
     LayoutRoutingModule,
     AuthModule,
+    MenuModule,
     ServiceProviderModule,
   ],
   providers: [
